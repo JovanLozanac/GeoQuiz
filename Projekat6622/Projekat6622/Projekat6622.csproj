@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9245DDA0-A107-47D1-AE31-99F9F8F1FC29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projekat6622</RootNamespace>
+    <AssemblyName>Projekat6622</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CPU.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFaktorSrece.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFaktorSrece.Designer.cs">
+      <DependentUpon>frmFaktorSrece.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMapa.Designer.cs">
+      <DependentUpon>frmMapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNetacno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNetacno.Designer.cs">
+      <DependentUpon>frmNetacno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonalizacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonalizacija.Designer.cs">
+      <DependentUpon>frmPersonalizacija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPitanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPitanje.Designer.cs">
+      <DependentUpon>frmPitanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPocetna.Designer.cs">
+      <DependentUpon>frmPocetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreskoceno_pitanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreskoceno_pitanje.Designer.cs">
+      <DependentUpon>frmPreskoceno_pitanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRezultat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRezultat.Designer.cs">
+      <DependentUpon>frmRezultat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTacno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTacno.Designer.cs">
+      <DependentUpon>frmTacno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTezina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTezina.Designer.cs">
+      <DependentUpon>frmTezina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IAnimacija.cs" />
+    <Compile Include="Igrac.cs" />
+    <Compile Include="Pitanje.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Putanja.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFaktorSrece.resx">
+      <DependentUpon>frmFaktorSrece.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMapa.resx">
+      <DependentUpon>frmMapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNetacno.resx">
+      <DependentUpon>frmNetacno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonalizacija.resx">
+      <DependentUpon>frmPersonalizacija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPitanje.resx">
+      <DependentUpon>frmPitanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPocetna.resx">
+      <DependentUpon>frmPocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreskoceno_pitanje.resx">
+      <DependentUpon>frmPreskoceno_pitanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRezultat.resx">
+      <DependentUpon>frmRezultat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTacno.resx">
+      <DependentUpon>frmTacno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTezina.resx">
+      <DependentUpon>frmTezina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapaEvrope6.6..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pocetni_ekran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pocetniekransivicama.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reka_poy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\srbgirl-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\srbgirl_devojka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rekasivicama.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_dugme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startsaivicama.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oblacic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dva_igraca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tri_igraca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jedan_igrac %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iskljucimuyiku.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jedan_igrac %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tri_igraca1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dva_igraca1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jedan_igrac %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yvukon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bezzvuka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bezvuka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\236-2360756_soundoff-svg-icon-free-sound-off-icon-png %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-loudspeaker-button-sound-encapsulated-postscript-button-angle-text-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mute-volume-sound-music-off-silent-audio-free-music-on-off-icon-tie-accessories-label-text-transparent-png-651966.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoj-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Verified-True-Confirmed-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\false.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smajlinetacan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smajlipreskocen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grbsrb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome_serbia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vez-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team-icon-fantastic-five-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jedan_igrac_plava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dva_igraca_plava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tri_igraca_plava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zvuk_plava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bezvuka_plava.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BEZZVUKA_PLAVA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cvecenavrhu-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plavi_vez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vez_ucosku-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crveni_vez-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crveni_vez_vodoravno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vodoravno-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crven-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crven-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vez_ucosku-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vez_ucosku-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dvacveta-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loza-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venac-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruza-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sajkaca-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sajkaca-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sajkaca-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalemegdan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cpu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quiz Music NO COPYRIGHT _ copyright FREE Quiz BACKGROUND MUSIC.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
